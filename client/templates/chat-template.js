@@ -12,13 +12,27 @@ Template.appChat.events({
 	"keyup .txtText": function (event) {
 		if(event.keyCode == 13){
 			Messages.insert({
-				name: $(".txtName").val(),
-				text: $(".txtText").val(),
+				name: $(".txtname").val(),
+				mname: $(".txtmname").val(),
+				lname: $(".txtlname").val(),
+				id: $(".txtsid").val(),
+				course: $(".txtcourse").val(),
+				db: $(".txtdb").val(),
+				cv: $(".txtcv").val(),
+				age: $(".txtage").val(),
+				gender: $(".txtgender").val(),
+				add: $(".txtadd").val(),
+				height: $(".txtheight").val(),
+				address: $(".txtText").val(),
+				
+
+
 				createdAt: new Date()
 			});
 
-			$(".txtName").val();
+			$(".txtText").val();
 			$(".txtText").focus();
+
 
 		}
 		return false;

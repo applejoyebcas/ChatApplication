@@ -1,12 +1,38 @@
 <template name = "appChat">
 {{#each messages}}
-	<div class = "alert alert-info">
-		<b>{{name}}</b>:{{text}} <button class="btn btn-danger btn-small btnDelete">&times;</button>
+
+	<div class = "alert alert-info"><center>
+		{{name}}<br>
+		 {{mname}} <br>
+		  {{lname}} <br>
+		  {{id}} <br>
+		  {{course}}<br> 
+		  {{db}}<br> 
+		  {{cv}}<br> 
+		  {{age}} <br>
+		  {{gender}}<br> 
+		  {{add}}<br> 
+		  {{height}}<br> 
+		  {{address}}<br> 
+
+		<button class="btn btn-danger btn-small btnDelete">&times;</button></center>
 	</div>
 	{{/each}}
-	<form class="form">
-		<input type="text" class="form-control txtName" placeholder= "Username"/>
-		<input type="text" class="form-control txtText" placeholder= "Type a Message"/>
+	
+	<form class="form"><center>
+		<input type="text" class="form-control txtname" placeholder= "First Name"/><br/>
+		<input type="text" class="form-control txtmname" placeholder= "Middle Name"/><br/>
+		<input type="text" class="form-control txtlname" placeholder= "Last Name"/><br/>
+		<input type="text" class="form-control txtsid" placeholder= "Student ID"/><br/>
+		<input type="text" class="form-control txtcourse" placeholder= "Course"/><br/>
+		<input type="text" class="form-control txtdb" placeholder= "Date Of Birth"/><br/>
+		<input type="text" class="form-control txtcv" placeholder= "Civil Status"/><br/>
+		<input type="text" class="form-control txtage" placeholder= "Age"/><br/>
+		<input type="text" class="form-control txtgender" placeholder= "Gender"/><br/>
+		<input type="text" class="form-control txtadd" placeholder= "Weight"/><br/>
+		<input type="text" class="form-control txtheight" placeholder= "Height"/><br/>
+		<input type="text" class="form-control txtText" placeholder= "Address"/><br/></center>
 	</form>
+
 
 </template>
